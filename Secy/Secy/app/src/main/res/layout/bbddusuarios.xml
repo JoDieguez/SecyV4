@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#2A3940">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:background="#115771"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
+            android:src="@drawable/safety"
+            tools:ignore="ContentDescription" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:text="SeCy"
+            android:textAlignment="center"
+            android:textSize="30sp"
+            android:fontFamily="sans-serif-black"
+            android:textColor="#FFEDED"
+            android:layout_marginTop="22dp"
+            tools:ignore="HardcodedText" />
+    </LinearLayout>
+    <!-- ___________________________________________________  Titulo pagina -->
+
+
+
+    <LinearLayout
+        android:layout_width="364dp"
+        android:layout_height="360dp"
+        android:layout_marginStart="16dp"
+        android:orientation="vertical"
+        android:layout_marginTop="90dp"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.032">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Registro de Nuevo Vecino"
+            android:textStyle="bold"
+            android:textColor="#00BCD4"
+            android:textSize="23dp" />
+        <!-- ___________________________________________________  Cierre Titulo pagina -->
+        <EditText
+            android:id="@+id/edtRut"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Rut"
+            android:textColorHint="#FFC107"
+            android:textColor="@color/white"
+            android:minHeight="48dp" />
+
+        <EditText
+            android:id="@+id/edtNom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nombre"
+            android:textColor="@color/white"
+            android:textColorHint="#FFC107"
+            android:minHeight="48dp" />
+
+        <EditText
+            android:id="@+id/edtDir"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Dirección"
+            android:textColor="@color/white"
+            android:textColorHint="#FFC107"
+            android:minHeight="48dp" />
+
+        <EditText
+            android:id="@+id/edtTel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Teléfono"
+            android:textColor="@color/white"
+            android:textColorHint="#FFC107"
+            android:minHeight="48dp" />
+
+        <EditText
+            android:id="@+id/edtCorreo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:textColor="@color/white"
+            android:textColorHint="#FFC107"
+            android:minHeight="48dp" />
+
+        <Spinner
+            android:id="@+id/spSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="00dp"
+            android:minHeight="48dp"
+            android:textColor="#FFC107"
+            android:contentDescription="s"/>
+
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="160dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="425dp"
+        android:backgroundTint="#8BC34A"
+        android:onClick="onClickAgregar"
+        android:text="AGREGAR"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.130"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:layout_width="160dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="425dp"
+        android:backgroundTint="#F44336"
+        android:onClick="onClickEliminar"
+        android:text="ELIMINAR"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.840"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:layout_width="160dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="485dp"
+        android:backgroundTint="#FF9800"
+        android:onClick="onClickModificar"
+        android:text="MODIFICAR"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.130"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:layout_width="160dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="485dp"
+        android:backgroundTint="#00BCD4"
+        android:onClick="onClickLimpiar"
+        android:text="LIMPIAR"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.840"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:layout_width="364dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="16dp"
+        android:orientation="vertical"
+        android:layout_marginTop="535dp"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.032">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Listado de Vecinos Inscritos"
+        android:textStyle="bold"
+        android:textColor="#00BCD4"
+        android:textSize="23dp" />
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lstLista"
+        android:layout_width="376dp"
+        android:layout_height="385dp"
+        android:layout_marginTop="570dp"
+        android:textColor="@color/white"
+        android:textColorHint="#FFC107"
+        android:cacheColorHint="#FFC107"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <!-- ___________________________________________________  pie pagina -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:background="#115771">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="70dp"
+            android:layout_marginEnd="50dp"
+            app:srcCompat="@drawable/fingerprint"
+            tools:ignore="ContentDescription"
+            />
+
+        <ImageButton
+            android:id="@+id/btnAbrirPagina"
+            android:backgroundTint="#115771"
+            android:layout_width="50dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="50dp"
+            android:src="@drawable/config"
+            android:scaleType="centerCrop"
+            android:contentDescription="Abrir página"
+            android:onClick="configAdicional"
+            tools:ignore="ContentDescription,HardcodedText" />
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginEnd="50dp"
+            app:srcCompat="@drawable/usr"
+            tools:ignore="ContentDescription" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

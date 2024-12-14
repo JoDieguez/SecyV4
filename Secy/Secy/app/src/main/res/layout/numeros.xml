@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#2A3940">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:background="#115771"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
+            android:src="@drawable/safety"
+            tools:ignore="ContentDescription" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:text="SeCy"
+            android:textAlignment="center"
+            android:textSize="30sp"
+            android:fontFamily="sans-serif-black"
+            android:textColor="#FFEDED"
+            android:layout_marginTop="22dp"
+            tools:ignore="HardcodedText" />
+    </LinearLayout>
+    <!-- ___________________________________________________  encabezado pagina -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:orientation="horizontal"
+        android:layout_marginTop="100dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Contactos"
+            android:textAlignment="center"
+            android:textSize="30dp"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+    <!-- etiqueta de texto para imagen de Thread-->
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <!-- etiqueta de texto para la barra de progreso-->
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cargando Datos"
+            android:textAlignment="center"
+            android:textSize="15sp"
+            android:id="@+id/textoemer"
+            android:layout_marginTop="200dp"
+            android:textColor="@android:color/white"
+
+            />
+
+        <ProgressBar
+            android:id="@+id/barraprogreso"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="70dp"
+            android:layout_gravity="center"
+
+            />
+
+        <ImageView
+        android:visibility="invisible"
+        android:id="@+id/imagenemer"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/numerosemer"
+        android:layout_gravity="center"/>
+
+
+    </LinearLayout>
+    <!-- ___________________________________________________  pie pagina -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:background="#115771">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="70dp"
+            android:layout_marginEnd="50dp"
+            app:srcCompat="@drawable/fingerprint"
+            tools:ignore="ContentDescription"
+            />
+
+        <ImageButton
+            android:id="@+id/btnAbrirPagina"
+            android:backgroundTint="#115771"
+            android:layout_width="50dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="50dp"
+            android:src="@drawable/config"
+            android:scaleType="centerCrop"
+            android:contentDescription="Abrir página"
+            android:onClick="configAdicional"
+            tools:ignore="ContentDescription,HardcodedText" />
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginEnd="50dp"
+            app:srcCompat="@drawable/usr"
+            tools:ignore="ContentDescription" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
